@@ -1,0 +1,1308 @@
+{
+	"info": {
+		"_postman_id": "f0aab356-e124-4a4d-bc51-5b21856e641e",
+		"name": "Midleware-Challange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19210761"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "RegisterUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\": \"ahmad naufal\",\r\n    \"email\": \"naufalfdl@gmail.com\",\r\n    \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "RegisterAsUserId1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"full_name\": \"ahmad naufal\",\r\n    \"email\": \"naufal@gmail.com\",\r\n    \"password\": \"password123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:49:46 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"naufal@gmail.com\",\n    \"full_name\": \"ahmad naufal\",\n    \"id\": 1\n}"
+						},
+						{
+							"name": "RegisterAsUserId5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"full_name\": \"ahmad naufal\",\r\n    \"email\": \"naufalfdl@gmail.com\",\r\n    \"password\": \"password123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:55:05 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "65"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"naufalfdl@gmail.com\",\n    \"full_name\": \"ahmad naufal\",\n    \"id\": 5\n}"
+						},
+						{
+							"name": "RegisterAsAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"full_name\": \"ahmad naufal admin\",\r\n    \"email\": \"naufal@admin.com\",\r\n    \"password\": \"password123\",\r\n    \"admin\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:50:20 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "68"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"email\": \"naufal@admin.com\",\n    \"full_name\": \"ahmad naufal admin\",\n    \"id\": 2\n}"
+						}
+					]
+				},
+				{
+					"name": "LoginUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"naufalfdl@gmail.com\",\r\n    \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LoginAsUserId1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"naufal@gmail.com\",\r\n    \"password\": \"password123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:51:16 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "159"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ZmFsc2UsImVtYWlsIjoibmF1ZmFsQGdtYWlsLmNvbSIsImlkIjoxfQ.6xfQvP3wMal4qA0GhNRc-yWj01ODwAtZO19Xc5dHoxs\"\n}"
+						},
+						{
+							"name": "LoginAsUserId5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"naufalfdl@gmail.com\",\r\n    \"password\": \"password123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:55:45 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "163"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ZmFsc2UsImVtYWlsIjoibmF1ZmFsZmRsQGdtYWlsLmNvbSIsImlkIjo1fQ.YdeScIhfEZ_Nt2Z1onFaVIQ5agXvV90-WBQk2G5HW6Q\"\n}"
+						},
+						{
+							"name": "LoginAsAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"naufal@admin.com\",\r\n    \"password\": \"password123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:51:45 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "157"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZW1haWwiOiJuYXVmYWxAYWRtaW4uY29tIiwiaWQiOjJ9.SGmebYSv7a2-Kf7Za-BxxWlAQqrNzQrMsU33EYl5nJo\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "CreateProduct",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZW1haWwiOiJuYXVmYWxAYWRtaW4uY29tIiwiaWQiOjJ9.SGmebYSv7a2-Kf7Za-BxxWlAQqrNzQrMsU33EYl5nJo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"samsung galaxy s23\",\r\n    \"description\": \"this is a samsung product phone by admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CreateProductByUserId1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:52:35 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "199"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"created_at\": \"2023-04-16T20:52:35.0103032+07:00\",\n    \"updated_at\": \"2023-04-16T20:52:35.0103032+07:00\",\n    \"title\": \"redmi note 5\",\n    \"description\": \"this is a xiaomi product phone\",\n    \"UserID\": 1,\n    \"User\": null\n}"
+						},
+						{
+							"name": "CreateProductByUserId5",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"realme 10\",\r\n    \"description\": \"this is a realme product phone\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:56:56 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "196"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"created_at\": \"2023-04-16T20:56:56.3198543+07:00\",\n    \"updated_at\": \"2023-04-16T20:56:56.3198543+07:00\",\n    \"title\": \"realme 10\",\n    \"description\": \"this is a realme product phone\",\n    \"UserID\": 5,\n    \"User\": null\n}"
+						},
+						{
+							"name": "CreateProductByAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"samsung galaxy s23\",\r\n    \"description\": \"this is a samsung product phone by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:58:23 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "215"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"created_at\": \"2023-04-16T20:58:23.3301473+07:00\",\n    \"updated_at\": \"2023-04-16T20:58:23.3301473+07:00\",\n    \"title\": \"samsung galaxy s23\",\n    \"description\": \"this is a samsung product phone by admin\",\n    \"UserID\": 2,\n    \"User\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "GetAllProducts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZW1haWwiOiJuYXVmYWxAYWRtaW4uY29tIiwiaWQiOjJ9.SGmebYSv7a2-Kf7Za-BxxWlAQqrNzQrMsU33EYl5nJo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetAllProductsById1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/products",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:59:01 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "793"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"created_at\": \"2023-04-16T20:52:35.010303+07:00\",\n        \"updated_at\": \"2023-04-16T20:52:35.010303+07:00\",\n        \"title\": \"redmi note 5\",\n        \"description\": \"this is a xiaomi product phone\",\n        \"UserID\": 1,\n        \"User\": null\n    },\n    {\n        \"id\": 2,\n        \"created_at\": \"2023-04-16T20:53:10.105661+07:00\",\n        \"updated_at\": \"2023-04-16T20:53:10.105661+07:00\",\n        \"title\": \"redmi note 6\",\n        \"description\": \"this is a xiaomi product phone\",\n        \"UserID\": 1,\n        \"User\": null\n    },\n    {\n        \"id\": 3,\n        \"created_at\": \"2023-04-16T20:53:13.888701+07:00\",\n        \"updated_at\": \"2023-04-16T20:53:13.888701+07:00\",\n        \"title\": \"redmi note 7\",\n        \"description\": \"this is a xiaomi product phone\",\n        \"UserID\": 1,\n        \"User\": null\n    },\n    {\n        \"id\": 4,\n        \"created_at\": \"2023-04-16T20:53:19.394741+07:00\",\n        \"updated_at\": \"2023-04-16T20:53:19.394741+07:00\",\n        \"title\": \"redmi note 8\",\n        \"description\": \"this is a xiaomi product phone\",\n        \"UserID\": 1,\n        \"User\": null\n    }\n]"
+						},
+						{
+							"name": "GetAllProductsById5",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/products",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:59:23 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "392"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"created_at\": \"2023-04-16T20:56:48.399529+07:00\",\n        \"updated_at\": \"2023-04-16T20:56:48.399529+07:00\",\n        \"title\": \"realme c35\",\n        \"description\": \"this is a realme product phone\",\n        \"UserID\": 5,\n        \"User\": null\n    },\n    {\n        \"id\": 6,\n        \"created_at\": \"2023-04-16T20:56:56.319854+07:00\",\n        \"updated_at\": \"2023-04-16T20:56:56.319854+07:00\",\n        \"title\": \"realme 10\",\n        \"description\": \"this is a realme product phone\",\n        \"UserID\": 5,\n        \"User\": null\n    }\n]"
+						},
+						{
+							"name": "GetAllProductsByAdmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/products",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 13:59:40 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1398"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"created_at\": \"2023-04-16T20:52:35.010303+07:00\",\n        \"updated_at\": \"2023-04-16T20:52:35.010303+07:00\",\n        \"title\": \"redmi note 5\",\n        \"description\": \"this is a xiaomi product phone\",\n        \"UserID\": 1,\n        \"User\": null\n    },\n    {\n        \"id\": 2,\n        \"created_at\": \"2023-04-16T20:53:10.105661+07:00\",\n        \"updated_at\": \"2023-04-16T20:53:10.105661+07:00\",\n        \"title\": \"redmi note 6\",\n        \"description\": \"this is a xiaomi product phone\",\n        \"UserID\": 1,\n        \"User\": null\n    },\n    {\n        \"id\": 3,\n        \"created_at\": \"2023-04-16T20:53:13.888701+07:00\",\n        \"updated_at\": \"2023-04-16T20:53:13.888701+07:00\",\n        \"title\": \"redmi note 7\",\n        \"description\": \"this is a xiaomi product phone\",\n        \"UserID\": 1,\n        \"User\": null\n    },\n    {\n        \"id\": 4,\n        \"created_at\": \"2023-04-16T20:53:19.394741+07:00\",\n        \"updated_at\": \"2023-04-16T20:53:19.394741+07:00\",\n        \"title\": \"redmi note 8\",\n        \"description\": \"this is a xiaomi product phone\",\n        \"UserID\": 1,\n        \"User\": null\n    },\n    {\n        \"id\": 5,\n        \"created_at\": \"2023-04-16T20:56:48.399529+07:00\",\n        \"updated_at\": \"2023-04-16T20:56:48.399529+07:00\",\n        \"title\": \"realme c35\",\n        \"description\": \"this is a realme product phone\",\n        \"UserID\": 5,\n        \"User\": null\n    },\n    {\n        \"id\": 6,\n        \"created_at\": \"2023-04-16T20:56:56.319854+07:00\",\n        \"updated_at\": \"2023-04-16T20:56:56.319854+07:00\",\n        \"title\": \"realme 10\",\n        \"description\": \"this is a realme product phone\",\n        \"UserID\": 5,\n        \"User\": null\n    },\n    {\n        \"id\": 7,\n        \"created_at\": \"2023-04-16T20:58:23.330147+07:00\",\n        \"updated_at\": \"2023-04-16T20:58:23.330147+07:00\",\n        \"title\": \"samsung galaxy s23\",\n        \"description\": \"this is a samsung product phone by admin\",\n        \"UserID\": 2,\n        \"User\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GetProductById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZW1haWwiOiJuYXVmYWxAYWRtaW4uY29tIiwiaWQiOjJ9.SGmebYSv7a2-Kf7Za-BxxWlAQqrNzQrMsU33EYl5nJo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/products/:productId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								":productId"
+							],
+							"variable": [
+								{
+									"key": "productId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GetProductById1Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:00:31 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "197"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"created_at\": \"2023-04-16T20:52:35.010303+07:00\",\n    \"updated_at\": \"2023-04-16T20:52:35.010303+07:00\",\n    \"title\": \"redmi note 5\",\n    \"description\": \"this is a xiaomi product phone\",\n    \"UserID\": 1,\n    \"User\": null\n}"
+						},
+						{
+							"name": "GetProductById1Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:00:55 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Unauthorized\",\n    \"message\": \"you are not allowed to access this data\"\n}"
+						},
+						{
+							"name": "GetProductById5Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:01:32 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"created_at\": \"2023-04-16T20:56:48.399529+07:00\",\n    \"updated_at\": \"2023-04-16T20:56:48.399529+07:00\",\n    \"title\": \"realme c35\",\n    \"description\": \"this is a realme product phone\",\n    \"UserID\": 5,\n    \"User\": null\n}"
+						},
+						{
+							"name": "GetProductById5Unauthorized",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"4"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:01:54 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Unauthorized\",\n    \"message\": \"you are not allowed to access this data\"\n}"
+						},
+						{
+							"name": "GetProductByIdAsAdminSuccess",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:02:16 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "197"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"created_at\": \"2023-04-16T20:53:10.105661+07:00\",\n    \"updated_at\": \"2023-04-16T20:53:10.105661+07:00\",\n    \"title\": \"redmi note 6\",\n    \"description\": \"this is a xiaomi product phone\",\n    \"UserID\": 1,\n    \"User\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateProduct",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZW1haWwiOiJuYXVmYWxAYWRtaW4uY29tIiwiaWQiOjJ9.SGmebYSv7a2-Kf7Za-BxxWlAQqrNzQrMsU33EYl5nJo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"realme 9\",\r\n    \"description\": \"this is a realme product phone update by admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/products/:productId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								":productId"
+							],
+							"variable": [
+								{
+									"key": "productId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateProductByUserId1Unauthorized",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 12\",\r\n    \"description\": \"this is a xiaomi product phone update by user 1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"4"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:04:06 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Unauthorized\",\n    \"message\": \"you are not allowed to access this data\"\n}"
+						},
+						{
+							"name": "UpdateProductByUserId5Unauthorized",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"realme 9 pro\",\r\n    \"description\": \"this is a realme product phone update by user 5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:05:08 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Unauthorized\",\n    \"message\": \"you are not allowed to access this data\"\n}"
+						},
+						{
+							"name": "UpdateProductByAdminSuccess",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"realme 9\",\r\n    \"description\": \"this is a realme product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/6",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:06:08 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "209"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 6,\n    \"created_at\": \"2023-04-16T20:56:56.319854+07:00\",\n    \"updated_at\": \"2023-04-16T21:06:08.042428+07:00\",\n    \"title\": \"realme 9\",\n    \"description\": \"this is a realme product phone update by admin\",\n    \"UserID\": 5,\n    \"User\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteProduct",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6dHJ1ZSwiZW1haWwiOiJuYXVmYWxAYWRtaW4uY29tIiwiaWQiOjJ9.SGmebYSv7a2-Kf7Za-BxxWlAQqrNzQrMsU33EYl5nJo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/products/:productId",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								":productId"
+							],
+							"variable": [
+								{
+									"key": "productId",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeleteProductByUserId5Unauthorized",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"2"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:07:20 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Unauthorized\",\n    \"message\": \"you are not allowed to access this data\"\n}"
+						},
+						{
+							"name": "DeleteProductByUserId5Unauthorized",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"5"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:08:08 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Unauthorized\",\n    \"message\": \"you are not allowed to access this data\"\n}"
+						},
+						{
+							"name": "DeleteProductByAdminSuccess",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"redmi note 5\",\r\n    \"description\": \"this is a xiaomi product phone update by admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/products/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 16 Apr 2023 14:08:39 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "36"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Success Delete Product\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
